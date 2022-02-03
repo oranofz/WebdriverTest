@@ -14,6 +14,7 @@ public class Test1 {
     private WebDriver driver;		
 	@Test				
 	public void testEasy() {	
+		System.out.println("Starting url test.");
 		driver.get("http://demo.guru99.com/test/guru99home/");  
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
