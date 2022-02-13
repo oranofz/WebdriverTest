@@ -25,6 +25,7 @@ public class Test1 {
 	}		
 	@AfterTest
 	public void afterTest() {
-		driver.quit();			
+		driver.quit();		
+		System.out.println();
 	}		
 }	
