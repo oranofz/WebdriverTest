@@ -28,7 +28,7 @@ public class Test1 {
 	public void beforeTest() {	
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\oran-\\eclipse-workspace\\chromedriver.exe");
 //		devTools = driver.getDevTools();
-//		devTools.createSession();
+//		devTddools.createSession();
 		String ss = "ssda";
 	}		
 	@AfterTest
