@@ -1,7 +1,11 @@
 package Tests;
 	
+import java.util.Optional;
+import java.lang.*;
 import org.openqa.selenium.WebDriver;		
-import org.openqa.selenium.chrome.ChromeDriver;		
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.*;
+import org.openqa.selenium.devtools.v97.network.Network;
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;	
@@ -10,7 +14,9 @@ import org.testng.annotations.AfterTest;
 
 public class Test1 {		
 
-    private WebDriver driver;		
+    private ChromeDriver driver;		
+    private DevTools devTools;
+    
 	@Test				
 	public void testEasy() {	
 		System.out.println("Starting url test.");
@@ -21,7 +27,9 @@ public class Test1 {
 	@BeforeTest
 	public void beforeTest() {	
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\oran-\\eclipse-workspace\\chromedriver.exe");
-	    driver = new ChromeDriver();  
+//		devTools = driver.getDevTools();
+//		devTools.createSession();
+//		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 	}		
 	@AfterTest
 	public void afterTest() {
