@@ -29,7 +29,7 @@ public class Test1 {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\oran-\\eclipse-workspace\\chromedriver.exe");
 //		devTools = driver.getDevTools();
 //		devTddools.createSession();
-		String ssdd = "ssda";
+		String ssddddd = "ssda";
 	}		
 	@AfterTest
 	public void afterTest() {
