@@ -29,7 +29,6 @@ public class Test1 {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\oran-\\eclipse-workspace\\chromedriver.exe");
 //		devTools = driver.getDevTools();
 //		devTools.createSession();
-//		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 	}		
 	@AfterTest
 	public void afterTest() {
